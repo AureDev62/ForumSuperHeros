@@ -1,0 +1,36 @@
+forum/
+│
+├── config/                  // Dossier contenant les fichiers de configuration
+│   └── db.php               // Fichier de configuration de la base de données
+│
+├── controllers/             // Dossiers pour les contrôleurs
+│   ├── TopicController.php  // Contrôleur pour la gestion des sujets
+│   └── CommentController.php // Contrôleur pour la gestion des commentaires
+│
+├── models/                  // Dossiers pour les modèles
+│   ├── Topic.php            // Modèle pour la gestion des sujets
+│   └── Comment.php          // Modèle pour la gestion des commentaires
+│
+├── views/                   // Dossiers pour les vues
+│   ├── topic/               // Dossier pour les vues liées aux sujets
+│   │   ├── index.php        // Vue pour la liste des sujets
+│   │   ├── show.php         // Vue pour afficher un sujet spécifique
+│   │   └── form.php         // Vue pour le formulaire de création de sujet
+│   ├── comment/             // Dossier pour les vues liées aux commentaires
+│   │   ├── form.php         // Vue pour le formulaire de création de commentaire
+│   │   └── show.php         // Vue pour afficher un commentaire spécifique
+│   ├── layout/              // Dossier pour les mises en page (layouts)
+│   │   ├── default.php     // Mise en page par défaut
+│   │   └── admin.php       // Mise en page pour les pages d'administration
+│   └── widget/              // Dossier pour les widgets réutilisables
+│       ├── header.php      // Widget pour l'en-tête
+│       └── footer.php      // Widget pour le pied de page
+│
+├── public/                  // Dossier contenant les fichiers accessibles publiquement
+│   ├── css/                 // Fichiers CSS
+│   │   └── style.css
+│   ├── js/                  // Fichiers JavaScript
+│   │   └── script.js
+│   └── images/              // Images utilisées dans le forum
+│
+└── index.php               // Fichier de routage
